@@ -14,8 +14,8 @@ return arr.reduce((sum,curr)=>sum+curr,0)
 }
 
 function differenceMaxMinWorker(...arr) {
-if(arr === 0) return 0;
-  let min = Math.min(...arr);
+if(arr.length === 0) return 0;
+let min = Math.min(...arr);
 let max = Math.max(...arr);
 let difference = max-min;
 return difference;
